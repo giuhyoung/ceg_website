@@ -4,10 +4,8 @@ import SectionTitle from './components/SectionTitle'
 import {
   capabilities,
   contactInfo,
-  companyIntro,
   heroStats,
   navItems,
-  certifications,
   projectRecords,
   processSteps,
   services,
@@ -92,52 +90,16 @@ function App() {
           </div>
         </section>
 
-        <section id="about" className="bg-white py-20 sm:py-24">
-          <div className="mx-auto max-w-7xl px-6 lg:grid lg:grid-cols-[1.1fr_0.9fr] lg:items-start lg:gap-16 lg:px-8">
-            <div>
-              <SectionTitle
-                eyebrow="About CEG&+"
-                title="국방 및 공공분야 ICT 연구개발 파트너"
-                description={companyIntro.greeting}
-              />
-              <p className="mt-6 text-sm font-medium text-slate-500">{companyIntro.ceoLine}</p>
-            </div>
-
-            <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:mt-0">
-              {[
-                certifications[0],
-                certifications[1],
-                certifications[2],
-                certifications[3],
-              ].map((cert) => (
-                <article
-                  key={cert.title}
-                  className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm"
-                >
-                  <div className="relative h-32 w-full bg-slate-200">
-                    <img
-                      src={cert.image}
-                      alt={cert.title}
-                      className="h-full w-full object-cover"
-                    />
-                  </div>
-                  <div className="p-4">
-                    <h3 className="text-sm font-semibold text-slate-900">{cert.title}</h3>
-                    <p className="mt-2 text-xs leading-6 text-slate-600">{cert.description}</p>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
         <section id="services" className="bg-slate-50 py-20 sm:py-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <SectionTitle
-              eyebrow="Services"
-              title="사업 소개"
-              description="풍력발전단지 영향 분석, 기술과 전략 구상, 비용/기술성숙도 조사·분석, 복합체계 분석을 중심으로 주요 서비스를 재정리했습니다."
+              eyebrow="About CEG&+"
+              title="국방 및 공공분야 ICT 연구개발 파트너"
+              description="㈜ 씨이지앤드플러스는 2012년 설립 이후 국방 및 공공 분야 IT 산업 발전을 위해 개념 설계, 정보기술과 전략 구상, 기술성숙도 분석 등 연구·개발 업무를 수행해 왔습니다. 빠르게 변화하는 환경 속에서도 변화의 속도와 방향을 앞서 읽고, 지속적인 R&D와 소통을 통해 고객에게 신뢰를 드리는 ICT 전문 파트너를 지향합니다."
             />
+            <p className="mt-6 text-sm font-medium text-slate-500">
+              ㈜ 씨이지앤드플러스 대표이사 김수영
+            </p>
 
             <div className="mt-12 grid gap-6 lg:grid-cols-2">
               {services.map((service) => (

@@ -1,10 +1,9 @@
 export const navItems = [
   { label: '홈', href: '#home' },
-  { label: '회사소개', href: '#about' },
-  { label: '사업분야', href: '#services' },
+  { label: '회사소개', href: '#services' },
   { label: '프로세스', href: '#process' },
   { label: '핵심역량', href: '#capabilities' },
-  { label: '연구수행실적', href: '#projects' },
+  { label: '연구실적', href: '#projects' },
   { label: '문의', href: '#contact' },
 ]
 
