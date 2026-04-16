@@ -6,6 +6,7 @@ import {
   contactInfo,
   heroStats,
   navItems,
+  projectRecords,
   processSteps,
   services,
 } from './content/siteContent'
@@ -23,8 +24,8 @@ function App() {
           <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-sky-400/10 to-transparent" />
           <div className="mx-auto grid max-w-7xl gap-14 px-6 py-20 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:py-24">
             <div className="relative">
-              <span className="inline-flex rounded-full border border-sky-400/30 bg-sky-400/10 px-4 py-2 text-sm font-medium text-sky-200">
-                연구 | CEG &+ | 대한민국
+              <span className="inline-flex rounded-full border border-sky-400/30 bg-sky-400/10 px-4 py-2 text-sm font-medium text-sky-200 tracking-wider">
+                연구 | 국방사업 | 풍력사업
               </span>
               <h1 className="mt-6 text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
                 국방분야 4차 산업 혁명에 대한 새로운 도전
@@ -122,6 +123,39 @@ function App() {
                     </h3>
                     <p className="mt-4 text-base leading-7 text-slate-600">{service.description}</p>
                   </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" className="bg-slate-950 py-20 sm:py-24">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <SectionTitle
+              eyebrow="Project Records"
+              title="연구수행실적"
+              description="국방 체계연구, 정보체계, 해상·육상 풍력 사업에 이르기까지 다양한 프로젝트를 수행해 왔습니다."
+              align="center"
+            />
+
+            <div className="mt-12 grid gap-6 lg:grid-cols-3">
+              {projectRecords.map((project) => (
+                <article
+                  key={`${project.period}-${project.title}`}
+                  className="flex flex-col rounded-[1.75rem] border border-white/10 bg-white/5 p-6 text-left backdrop-blur"
+                >
+                  <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-300">
+                    {project.period}
+                  </p>
+                  <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
+                    {project.title}
+                  </h3>
+                  <p className="mt-3 flex-1 text-sm leading-7 text-slate-300">
+                    {project.description}
+                  </p>
+                  <p className="mt-4 inline-flex w-fit rounded-full border border-sky-400/30 bg-sky-400/10 px-3 py-1 text-xs font-semibold text-sky-200">
+                    {project.category}
+                  </p>
                 </article>
               ))}
             </div>
