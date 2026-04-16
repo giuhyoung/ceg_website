@@ -93,7 +93,7 @@ function App() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <SectionTitle
               eyebrow="Services"
-              title="기존 사이트의 핵심 메뉴 구조를 유지한 사업 소개"
+              title="사업 소개"
               description="풍력발전단지 영향 분석, 기술과 전략 구상, 비용/기술성숙도 조사·분석, 복합체계 분석을 중심으로 주요 서비스를 재정리했습니다."
             />
 
