@@ -212,7 +212,7 @@ function App() {
                     <p className="mt-2 text-lg font-semibold text-white">{contactInfo.address}</p>
                   </div>
                   <p className="rounded-2xl border border-dashed border-sky-400/30 bg-sky-400/10 px-4 py-3 text-sm leading-6 text-sky-100">
-                    신용산역 5,6번 출구 지하2층과 바로 연결되어 있습니다.
+                    신용산역 5,6번 출구 방면, 지하2층과 연결되어 있습니다.
                   </p>
                 </div>
               </div>
