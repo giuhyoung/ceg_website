@@ -1,11 +1,19 @@
 export const navItems = [
   { label: '홈', href: '#home' },
+  { label: '회사소개', href: '#about' },
   { label: '사업분야', href: '#services' },
-  { label: '연구수행실적', href: '#projects' },
-  { label: '핵심역량', href: '#capabilities' },
   { label: '프로세스', href: '#process' },
+  { label: '핵심역량', href: '#capabilities' },
+  { label: '연구수행실적', href: '#projects' },
   { label: '문의', href: '#contact' },
 ]
+
+export const companyIntro = {
+  title: '국방 및 공공 분야 ICT 전문 연구개발 기업',
+  greeting:
+    '㈜ 씨이지앤드플러스는 2012년 설립 이후 국방 및 공공 분야 IT 산업 발전을 위해 개념 설계, 정보기술과 전략 구상, 기술성숙도 분석 등 연구·개발 업무를 수행해 왔습니다. 빠르게 변화하는 환경 속에서도 변화의 속도와 방향을 앞서 읽고, 지속적인 R&D와 소통을 통해 고객에게 신뢰를 드리는 ICT 전문 파트너를 지향합니다.',
+  ceoLine: '㈜ 씨이지앤드플러스 대표이사 김수영',
+}
 
 export const heroStats = [
   { label: '주력 분야', value: '국방사업 · 풍력사업' },
@@ -106,6 +114,37 @@ export const processSteps = [
   },
 ]
 
+export const certifications = [
+  {
+    title: '중소기업 확인서',
+    description: '중소기업으로서의 자격을 인정받아 국방·공공 프로젝트 수행 기반을 확보했습니다.',
+    image:
+      // TODO: 실제 중소기업 확인서 이미지로 교체하세요.
+      'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80',
+  },
+  {
+    title: '기업부설연구소 인정서',
+    description: '기업부설연구소 인정을 통해 체계적인 R&D 조직과 연구 역량을 공식적으로 인정받았습니다.',
+    image:
+      // TODO: 실제 기업부설연구소 인정서 이미지로 교체하세요.
+      'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80',
+  },
+  {
+    title: 'SW 사업자 확인서',
+    description: '국방·공공 분야 소프트웨어 사업 수행을 위한 공식 SW 사업자 자격을 보유하고 있습니다.',
+    image:
+      // TODO: 실제 SW 사업자 확인서 이미지로 교체하세요.
+      'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80',
+  },
+  {
+    title: '한국풍력산업협회 특별회원',
+    description: '한국풍력산업협회 특별회원으로서 해상·육상 풍력발전단지 관련 국방·사업성 검토를 함께 수행합니다.',
+    image:
+      // TODO: 실제 협회 회원증 또는 MOU 이미지로 교체하세요.
+      'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80',
+  },
+]
+
 export const projectRecords = [
   {
     period: '2020년 ~',
@@ -179,7 +218,7 @@ export const contactInfo = {
   email: 'ksy520310@cegandplus.com',
   // TODO: 실제 대표 전화로 교체하세요.
   phone: '010-5070-3386',
-  
+
   fax : '02-522-1209',
   // TODO: 실제 주소로 교체하세요.
   address: '서울 용산구 한강대로 109 용성비즈텔 404호',

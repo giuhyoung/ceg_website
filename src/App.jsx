@@ -4,8 +4,10 @@ import SectionTitle from './components/SectionTitle'
 import {
   capabilities,
   contactInfo,
+  companyIntro,
   heroStats,
   navItems,
+  certifications,
   projectRecords,
   processSteps,
   services,
@@ -90,6 +92,45 @@ function App() {
           </div>
         </section>
 
+        <section id="about" className="bg-white py-20 sm:py-24">
+          <div className="mx-auto max-w-7xl px-6 lg:grid lg:grid-cols-[1.1fr_0.9fr] lg:items-start lg:gap-16 lg:px-8">
+            <div>
+              <SectionTitle
+                eyebrow="About CEG&+"
+                title="국방 및 공공분야 ICT 연구개발 파트너"
+                description={companyIntro.greeting}
+              />
+              <p className="mt-6 text-sm font-medium text-slate-500">{companyIntro.ceoLine}</p>
+            </div>
+
+            <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:mt-0">
+              {[
+                certifications[0],
+                certifications[1],
+                certifications[2],
+                certifications[3],
+              ].map((cert) => (
+                <article
+                  key={cert.title}
+                  className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm"
+                >
+                  <div className="relative h-32 w-full bg-slate-200">
+                    <img
+                      src={cert.image}
+                      alt={cert.title}
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <h3 className="text-sm font-semibold text-slate-900">{cert.title}</h3>
+                    <p className="mt-2 text-xs leading-6 text-slate-600">{cert.description}</p>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section id="services" className="bg-slate-50 py-20 sm:py-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <SectionTitle
@@ -129,6 +170,55 @@ function App() {
           </div>
         </section>
 
+        <section id="process" className="bg-slate-950 py-20 sm:py-24">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <SectionTitle
+              eyebrow="Process"
+              title="분석에서 실행 지원까지 이어지는 프로젝트 흐름"
+              description="실제 제안, 검토, 보고 단계에서 활용할 수 있도록 단계별로 접근합니다."
+              align="center"
+            />
+
+            <div className="mt-12 grid gap-6 lg:grid-cols-4">
+              {processSteps.map((step) => (
+                <div
+                  key={step.step}
+                  className="rounded-[1.75rem] border border-white/10 bg-white/5 p-6 backdrop-blur"
+                >
+                  <p className="text-sm font-semibold tracking-[0.3em] text-sky-300">{step.step}</p>
+                  <h3 className="mt-4 text-xl font-semibold text-white">{step.title}</h3>
+                  <p className="mt-4 text-base leading-7 text-slate-300">{step.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="capabilities" className="bg-white py-20 sm:py-24">
+          <div className="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
+            <SectionTitle
+              eyebrow="Capabilities"
+              title="국방사업과 풍력사업을 잇는 실무형 분석 역량"
+              description="사업 환경과 기술 구조를 함께 읽어내는 접근을 통해 의사결정에 필요한 인사이트를 정리합니다."
+            />
+
+            <div className="grid gap-5 sm:grid-cols-2">
+              {capabilities.map((item) => (
+                <div
+                  key={item.title}
+                  className="rounded-[1.75rem] border border-slate-200 bg-slate-50 p-6 shadow-sm"
+                >
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-sky-100 text-lg font-bold text-sky-700">
+                    +
+                  </div>
+                  <h3 className="mt-5 text-xl font-semibold text-slate-950">{item.title}</h3>
+                  <p className="mt-3 text-base leading-7 text-slate-600">{item.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section id="projects" className="bg-slate-950 py-20 sm:py-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <SectionTitle
@@ -161,56 +251,6 @@ function App() {
             </div>
           </div>
         </section>
-
-        <section id="capabilities" className="bg-white py-20 sm:py-24">
-          <div className="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
-            <SectionTitle
-              eyebrow="Capabilities"
-              title="국방사업과 풍력사업을 잇는 실무형 분석 역량"
-              description="사업 환경과 기술 구조를 함께 읽어내는 접근을 통해 의사결정에 필요한 인사이트를 정리합니다."
-            />
-
-            <div className="grid gap-5 sm:grid-cols-2">
-              {capabilities.map((item) => (
-                <div
-                  key={item.title}
-                  className="rounded-[1.75rem] border border-slate-200 bg-slate-50 p-6 shadow-sm"
-                >
-                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-sky-100 text-lg font-bold text-sky-700">
-                    +
-                  </div>
-                  <h3 className="mt-5 text-xl font-semibold text-slate-950">{item.title}</h3>
-                  <p className="mt-3 text-base leading-7 text-slate-600">{item.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section id="process" className="bg-slate-950 py-20 sm:py-24">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <SectionTitle
-              eyebrow="Process"
-              title="분석에서 실행 지원까지 이어지는 프로젝트 흐름"
-              description="실제 제안, 검토, 보고 단계에서 활용할 수 있도록 단계별로 접근합니다."
-              align="center"
-            />
-
-            <div className="mt-12 grid gap-6 lg:grid-cols-4">
-              {processSteps.map((step) => (
-                <div
-                  key={step.step}
-                  className="rounded-[1.75rem] border border-white/10 bg-white/5 p-6 backdrop-blur"
-                >
-                  <p className="text-sm font-semibold tracking-[0.3em] text-sky-300">{step.step}</p>
-                  <h3 className="mt-4 text-xl font-semibold text-white">{step.title}</h3>
-                  <p className="mt-4 text-base leading-7 text-slate-300">{step.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         <section id="contact" className="bg-slate-100 py-20 sm:py-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="overflow-hidden rounded-[2rem] bg-slate-950 shadow-2xl">
@@ -222,9 +262,17 @@ function App() {
                   <h2 className="mt-5 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
                     {contactInfo.title}
                   </h2>
-                  <p className="mt-5 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg">
-                    {contactInfo.description}
-                  </p>
+                  <div className="mt-5 max-w-2xl overflow-hidden rounded-2xl border border-slate-800">
+                    <iframe
+                      title="CEG&+ 위치"
+                      src="https://www.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EC%9A%A9%EC%82%B0%EA%B5%AC%20%ED%95%9C%EA%B0%95%EB%8C%80%EB%A1%9C%20109%20%EC%9A%A9%EC%84%B1%EB%B9%84%EC%A6%88%ED%85%94%20404%ED%98%B8&output=embed"
+                      width="100%"
+                      height="260"
+                      style={{ border: 0 }}
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                    />
+                  </div>
                 </div>
 
                 <div className="grid gap-4 rounded-[1.75rem] border border-white/10 bg-white/5 p-6">
