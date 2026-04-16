@@ -17,7 +17,7 @@ export const companyIntro = {
 export const heroStats = [
   { label: '주력 분야', value: '국방사업 · 풍력사업' },
   { label: '핵심 서비스', value: '분석 · 전략 · 체계구상' },
-  { label: '운영 형태', value: '모바일 대응 단일 랜딩 페이지' },
+  { label: '운영 형태', value: '기업 부설 연구소' },
 ]
 
 export const services = [
