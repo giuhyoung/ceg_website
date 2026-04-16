@@ -34,8 +34,7 @@ function App() {
                 New Challenges for 4th Industrial Revolution in Military Sector
               </p>
               <p className="mt-6 max-w-2xl text-base leading-8 text-slate-400 sm:text-lg">
-                기존 사이트의 핵심 문구와 사업 방향을 유지하면서, 국방사업과 풍력사업 홍보에 적합한
-                현대적인 서비스형 랜딩 페이지로 재구성했습니다.
+                Wind Power & Defense Strategy
               </p>
 
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
