@@ -4,12 +4,19 @@ function Header({ navItems }) {
       <div className="mx-auto max-w-7xl px-6 py-4 lg:px-8">
         <div className="flex items-center justify-between gap-4">
           <a href="#home" className="flex items-center gap-3 text-white">
-            <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-400 to-cyan-300 text-lg font-bold text-slate-950">
-              C
-            </span>
+            <img
+              src="/ceg-logo.png"
+              alt="CEG&+ 로고"
+              className="h-11 w-11 rounded-2xl border border-white/10 object-contain"
+            />
             <div>
-              <p className="text-sm font-semibold tracking-[0.24em] text-sky-300">CEG</p>
-              <p className="text-xs text-slate-300">Defense & Wind Strategy</p>
+              <p className="text-xs font-medium text-slate-300">
+                <span className="text-sky-300">Cre</span>
+                <span className="text-red-400">a</span>
+                <span className="text-amber-300">c</span>
+                <span className="text-sky-300">tive</span>
+                <span className="text-slate-300"> Entrepreneur Gesellschaft &+</span>
+              </p>
             </div>
           </a>
 
