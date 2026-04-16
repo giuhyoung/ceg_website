@@ -47,9 +47,9 @@ function App() {
                 </a>
                 <a
                   href="#contact"
-                  className="inline-flex items-center justify-center rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-white transition hover:border-sky-300 hover:text-sky-200"
+                  className="inline-flex items-center justify-center rounded-full bg-sky-400 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-sky-300"
                 >
-                  문의 정보 확인
+                  찾아 오시는 길
                 </a>
               </div>
 
@@ -57,9 +57,9 @@ function App() {
                 {heroStats.map((item) => (
                   <div
                     key={item.label}
-                    className="rounded-3xl border border-white/10 bg-white/5 p-5 backdrop-blur"
+                    className="rounded-3xl border border-white/10 bg-slate-950/70 p-5 text-left text-slate-100 shadow-lg shadow-slate-950/20 backdrop-blur"
                   >
-                    <p className="text-sm text-slate-400">{item.label}</p>
+                    <p className="text-sm text-slate-300">{item.label}</p>
                     <p className="mt-2 text-base font-semibold text-white">{item.value}</p>
                   </div>
                 ))}
