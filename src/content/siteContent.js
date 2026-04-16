@@ -112,6 +112,8 @@ export const contactInfo = {
   email: 'ksy520310@cegandplus.com',
   // TODO: 실제 대표 전화로 교체하세요.
   phone: '010-5070-3386',
+  
+  fax : '02-522-1209',
   // TODO: 실제 주소로 교체하세요.
   address: '서울 용산구 한강대로 109 용성비즈텔 404호',
 }

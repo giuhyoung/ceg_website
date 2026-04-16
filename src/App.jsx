@@ -208,6 +208,10 @@ function App() {
                     <p className="mt-2 text-lg font-semibold text-white">{contactInfo.phone}</p>
                   </div>
                   <div>
+                    <p className="text-sm text-slate-400">팩스</p>
+                    <p className="mt-2 text-lg font-semibold text-white">{contactInfo.fax}</p>
+                  </div>
+                  <div>
                     <p className="text-sm text-slate-400">주소</p>
                     <p className="mt-2 text-lg font-semibold text-white">{contactInfo.address}</p>
                   </div>
