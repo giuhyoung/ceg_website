@@ -109,7 +109,9 @@ export const contactInfo = {
   title: '국방사업과 풍력사업을 위한 전략 파트너',
   description:
     '참고 사이트의 핵심 메시지를 유지하면서, 최신 서비스형 랜딩 페이지 구조로 재구성했습니다. 실제 연락처와 회사 정보는 아래 영역에 바로 교체하실 수 있습니다.',
-  email: 'contact@ceg-company.com',
-  phone: '02-0000-0000',
-  address: '서울특별시 강남구 테헤란로 00',
+  email: 'ksy520310@cegandplus.com',
+  // TODO: 실제 대표 전화로 교체하세요.
+  phone: '010-5070-3386',
+  // TODO: 실제 주소로 교체하세요.
+  address: '서울 용산구 한강대로 109 용성비즈텔 404호',
 }
