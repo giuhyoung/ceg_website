@@ -13,10 +13,32 @@ import {
 } from './content/siteContent'
 
 function App() {
-  const isKakaoInApp =
-    typeof navigator !== 'undefined' && /KAKAOTALK/i.test(navigator.userAgent)
+  const userAgent = typeof navigator !== 'undefined' ? navigator.userAgent : ''
+  const isAndroid = /Android/i.test(userAgent)
+  const isIOS = /iPhone|iPad|iPod/i.test(userAgent)
 
-  const [mapEmbedFailed, setMapEmbedFailed] = useState(() => isKakaoInApp)
+  const isInAppBrowser = (() => {
+    if (!userAgent) return false
+
+    // Common in-app browsers (messengers, social, portals) that often block 3rd-party iframe embeds.
+    if (
+      /KAKAOTALK|KAKAO|DaumApps|NAVER|Instagram|FBAN|FBAV|Line\/|Twitter|GSA|DuckDuckGo/i.test(
+        userAgent
+      )
+    ) {
+      return true
+    }
+
+    // Android WebView token ("; wv)") is a strong indicator of an in-app webview.
+    if (isAndroid && /; wv\)/i.test(userAgent)) return true
+
+    // iOS in-app browsers typically don't identify as Safari.
+    if (isIOS && !/Safari/i.test(userAgent)) return true
+
+    return false
+  })()
+
+  const [mapEmbedFailed, setMapEmbedFailed] = useState(() => isInAppBrowser)
 
   const mapQuery = contactInfo.mapQuery ?? contactInfo.address
 
@@ -247,7 +269,7 @@ function App() {
                     {mapEmbedFailed ? (
                       <div className="grid gap-4 bg-slate-950 px-5 py-6 sm:px-6">
                         <p className="text-sm leading-6 text-slate-300">
-                          {isKakaoInApp
+                          {isInAppBrowser
                             ? '인앱 브라우저에서는 지도 링크가 차단될 수 있어, 아래에서 지도를 선택해 열어주세요.'
                             : '인앱 브라우저 환경에서 지도가 차단되어 표시되지 않습니다. 아래에서 지도를 선택해 열어주세요.'}
                         </p>
