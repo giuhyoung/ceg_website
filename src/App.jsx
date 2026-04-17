@@ -1,3 +1,4 @@
+import { useMemo, useState } from 'react'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import SectionTitle from './components/SectionTitle'
@@ -12,10 +13,20 @@ import {
 } from './content/siteContent'
 
 function App() {
-  const googleMapsQuery = contactInfo.mapQuery ?? contactInfo.address
-  const googleMapsEmbedSrc = `https://www.google.com/maps?q=${encodeURIComponent(
-    googleMapsQuery
-  )}&output=embed`
+  const [mapEmbedFailed, setMapEmbedFailed] = useState(false)
+
+  const mapQuery = contactInfo.mapQuery ?? contactInfo.address
+
+  const mapLinks = useMemo(() => {
+    const encoded = encodeURIComponent(mapQuery)
+
+    return {
+      googleEmbed: `https://www.google.com/maps?q=${encoded}&output=embed`,
+      google: `https://www.google.com/maps/search/?api=1&query=${encoded}`,
+      kakao: `https://map.kakao.com/link/search/${encoded}`,
+      naver: `https://map.naver.com/v5/search/${encoded}`,
+    }
+  }, [mapQuery])
 
   return (
     <div className="bg-slate-950 text-slate-100">
@@ -229,15 +240,52 @@ function App() {
                     {contactInfo.title}
                   </h2>
                   <div className="mt-5 max-w-2xl overflow-hidden rounded-2xl border border-slate-800">
-                    <iframe
-                      title="CEG&+ 위치"
-                      src={googleMapsEmbedSrc}
-                      width="100%"
-                      height="260"
-                      style={{ border: 0 }}
-                      loading="lazy"
-                      referrerPolicy="no-referrer-when-downgrade"
-                    />
+                    {mapEmbedFailed ? (
+                      <div className="grid gap-4 bg-slate-950 px-5 py-6 sm:px-6">
+                        <p className="text-sm leading-6 text-slate-300">
+                          인앱 브라우저 환경에서 지도가 차단되어 표시되지 않습니다. 아래에서 지도를 선택해
+                          열어주세요.
+                        </p>
+                        <div className="flex flex-wrap gap-3">
+                          <a
+                            href={mapLinks.google}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="inline-flex items-center justify-center rounded-full bg-sky-400 px-5 py-2 text-sm font-semibold text-slate-950 transition hover:bg-sky-300"
+                          >
+                            구글지도
+                          </a>
+                          <a
+                            href={mapLinks.kakao}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="inline-flex items-center justify-center rounded-full border border-white/10 bg-white/5 px-5 py-2 text-sm font-semibold text-white transition hover:bg-white/10"
+                          >
+                            카카오맵
+                          </a>
+                          <a
+                            href={mapLinks.naver}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="inline-flex items-center justify-center rounded-full border border-white/10 bg-white/5 px-5 py-2 text-sm font-semibold text-white transition hover:bg-white/10"
+                          >
+                            네이버지도
+                          </a>
+                        </div>
+                      </div>
+                    ) : (
+                      <iframe
+                        title="CEG&+ 위치"
+                        src={mapLinks.googleEmbed}
+                        width="100%"
+                        height="260"
+                        style={{ border: 0 }}
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        onLoad={() => setMapEmbedFailed(false)}
+                        onError={() => setMapEmbedFailed(true)}
+                      />
+                    )}
                   </div>
                 </div>
 
