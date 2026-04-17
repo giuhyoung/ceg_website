@@ -330,6 +330,7 @@ function App() {
                   <div>
                     <p className="text-sm text-slate-400">전화</p>
                     <p className="mt-2 text-lg font-semibold text-white">{contactInfo.phone}</p>
+                    <p className="mt-1 text-sm font-medium text-slate-300">{contactInfo.phoneIntl}</p>
                   </div>
                   <div>
                     <p className="text-sm text-slate-400">팩스</p>

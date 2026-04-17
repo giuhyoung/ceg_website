@@ -245,6 +245,7 @@ export const contactInfo = {
   email: 'ksy520310@cegandplus.com',
   // 대표 전화번호
   phone: '010-5070-3386',
+  phoneIntl: '+82 70-8868-1209',
   // 팩스번호
   fax : '02-522-1209',
   // 회사주소
