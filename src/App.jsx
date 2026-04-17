@@ -248,7 +248,7 @@ function App() {
                       <div className="grid gap-4 bg-slate-950 px-5 py-6 sm:px-6">
                         <p className="text-sm leading-6 text-slate-300">
                           {isKakaoInApp
-                            ? '카카오톡 인앱 브라우저에서는 구글 지도 임베드가 차단될 수 있어, 아래에서 지도를 선택해 열어주세요.'
+                            ? '인앱 브라우저에서는 지도 링크가 차단될 수 있어, 아래에서 지도를 선택해 열어주세요.'
                             : '인앱 브라우저 환경에서 지도가 차단되어 표시되지 않습니다. 아래에서 지도를 선택해 열어주세요.'}
                         </p>
                         <div className="mx-auto grid w-full max-w-sm gap-3">
