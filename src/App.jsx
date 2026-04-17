@@ -12,6 +12,11 @@ import {
 } from './content/siteContent'
 
 function App() {
+  const googleMapsQuery = contactInfo.mapQuery ?? contactInfo.address
+  const googleMapsEmbedSrc = `https://www.google.com/maps?q=${encodeURIComponent(
+    googleMapsQuery
+  )}&output=embed`
+
   return (
     <div className="bg-slate-950 text-slate-100">
       <Header navItems={navItems} />
@@ -226,7 +231,7 @@ function App() {
                   <div className="mt-5 max-w-2xl overflow-hidden rounded-2xl border border-slate-800">
                     <iframe
                       title="CEG&+ 위치"
-                      src="https://www.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EC%9A%A9%EC%82%B0%EA%B5%AC%20%ED%95%9C%EA%B0%95%EB%8C%80%EB%A1%9C%20109%20%EC%9A%A9%EC%84%B1%EB%B9%84%EC%A6%88%ED%85%94%20404%ED%98%B8&output=embed"
+                      src={googleMapsEmbedSrc}
                       width="100%"
                       height="260"
                       style={{ border: 0 }}
