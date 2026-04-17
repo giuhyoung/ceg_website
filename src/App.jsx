@@ -55,7 +55,7 @@ function App() {
   }, [mapQuery])
 
   return (
-    <div className="bg-slate-950 text-slate-100">
+    <div className="bg-slate-950 text-slate-100 overflow-x-hidden">
       <Header navItems={navItems} />
 
       <main>
