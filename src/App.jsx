@@ -180,18 +180,18 @@ function App() {
               title="분석에서 실행 지원까지 이어지는 프로젝트 흐름"
               description="실제 제안, 검토, 보고 단계에서 활용할 수 있도록 단계별로 접근합니다."
               align="center"
-              compact
+              theme="dark"
             />
 
-            <div className="mt-10 grid gap-5 lg:grid-cols-4">
+            <div className="mt-12 grid gap-6 lg:grid-cols-4">
               {processSteps.map((step) => (
                 <div
                   key={step.step}
                   className="rounded-[1.75rem] border border-white/10 bg-white/5 p-6 backdrop-blur"
                 >
                   <p className="text-sm font-semibold tracking-[0.3em] text-sky-300">{step.step}</p>
-                  <h3 className="mt-3 text-xl font-semibold text-white">{step.title}</h3>
-                  <p className="mt-3 text-base leading-7 text-slate-300">{step.description}</p>
+                  <h3 className="mt-4 text-xl font-semibold text-white">{step.title}</h3>
+                  <p className="mt-4 text-base leading-7 text-slate-300">{step.description}</p>
                 </div>
               ))}
             </div>
@@ -230,6 +230,7 @@ function App() {
               title="연구수행실적"
               description="국방 체계연구, 정보체계, 해상·육상 풍력 사업에 이르기까지 다양한 프로젝트를 수행해 왔습니다."
               align="center"
+              theme="dark"
             />
 
             <div className="mt-12 grid gap-6 lg:grid-cols-3">
