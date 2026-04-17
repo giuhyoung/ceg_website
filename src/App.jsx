@@ -58,7 +58,7 @@ function App() {
     <div className="bg-slate-950 text-slate-100">
       <Header navItems={navItems} />
 
-      <main className="overflow-x-hidden">
+      <main>
         <section
           id="home"
           className="relative overflow-hidden border-b border-white/10 bg-[radial-gradient(circle_at_top_right,_rgba(56,189,248,0.18),_transparent_24%),linear-gradient(180deg,_#020617_0%,_#0b1224_55%,_#0f172a_100%)]"
