@@ -21,13 +21,14 @@ function App() {
   const mapQuery = contactInfo.mapQuery ?? contactInfo.address
 
   const mapLinks = useMemo(() => {
-    const encoded = encodeURIComponent(mapQuery)
+    const encodedForGoogle = encodeURIComponent(mapQuery)
+    const encodedAddressOnly = encodeURIComponent(contactInfo.address)
 
     return {
-      googleEmbed: `https://www.google.com/maps?q=${encoded}&output=embed`,
-      google: `https://www.google.com/maps/search/?api=1&query=${encoded}`,
-      kakao: `https://map.kakao.com/link/search/${encoded}`,
-      naver: `https://map.naver.com/v5/search/${encoded}`,
+      googleEmbed: `https://www.google.com/maps?q=${encodedForGoogle}&output=embed`,
+      google: `https://www.google.com/maps/search/?api=1&query=${encodedForGoogle}`,
+      kakao: `https://map.kakao.com/link/search/${encodedAddressOnly}`,
+      naver: `https://map.naver.com/v5/search/${encodedAddressOnly}`,
     }
   }, [mapQuery])
 
