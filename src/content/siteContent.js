@@ -16,16 +16,16 @@ export const companyIntro = {
 
 export const heroStats = [
   { label: '주력 분야', value: '국방 R&D · 풍력발전사업' },
-  { label: '핵심 서비스', value: '전략 기획 및 체계 구상 · 군 작전성 검토' },
+  { label: '핵심 서비스', value: '전략기획 및 체계구상 · 군 작전성 검토' },
   { label: '운영 형태', value: '기업 부설 연구소' },
 ]
 
 export const services = [
   {
-    title: '풍력발전단지 군 작전 영향 분석',
+    title: '풍력발전단지 군 작전 영향분석',
     english: 'Military Operability Review On/Off Shore Wind Farm',
     description:
-      '육상 및 해상 풍력 발전단지가 군 작전에 미치는 영향의 정도를 군사기지법 관계법령 및 행정규칙에 근거하여 분석 및 평가합니다.',
+      '육상 및 해상 풍력발전단지가 군 작전에 미치는 영향의 정도를 군사기지법 관계법령 및 행정규칙에 근거하여 분석 및 평가합니다.',
     image:
       // TODO: 실제 풍력발전단지 또는 사업 관련 이미지로 교체하세요.
       'https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=1200&q=80',
@@ -35,7 +35,7 @@ export const services = [
     title: '기술과 전략 구상',
     english: 'Develop System Technology & Strategy',
     description:
-      '군 운용개념 구현을 위한 요구능력, 체계운용, 성능 요소를 정리하고 체계 구성 및 기술 구조를 구상합니다.',
+      '군 운용개념 구현을 위한 요구능력, 체계운용, 성능요소를 정리하고 체계구성 및 기술구조를 구상합니다.',
     image:
       // TODO: 실제 전략회의, 시스템 설계, 국방 R&D 이미지로 교체하세요.
       'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80',
@@ -55,7 +55,7 @@ export const services = [
     title: '복합체계 분석',
     english: 'System of Systems Analysis',
     description:
-      '체계 간 상호 연관성을 분석하고 의존성, 강점/약점, 주요 노드를 도출해 전체 체계에 영향을 미치는 지식기반 분석 활동을 수행합니다.',
+      '체계 간 상호연관성을 분석하고 의존성, 강점/약점, 주요노드를 도출해 전체 체계에 영향을 미치는 지식기반 분석활동을 수행합니다.',
     image:
       // TODO: 실제 복합체계 다이어그램, 통합운영 화면 이미지로 교체하세요.
       'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80',
@@ -82,7 +82,7 @@ export const capabilities = [
   {
     title: '보고서·현장 대응 메뉴얼',
     description:
-      '실무 보고와 의사결정 지원을 위한 구조화된 결과물을 지향합니다.',
+      '실무보고와 의사결정 지원을 위한 구조화된 결과물을 지향합니다.',
   },
 ]
 
@@ -91,19 +91,19 @@ export const processSteps = [
     step: '01',
     title: '현황 진단',
     description:
-      '사업 목적, 이해관계자, 규제 환경, 기술 현황을 정리해 과제의 핵심 변수를 도출합니다.',
+      '사업목적, 이해관계자, 규제환경, 기술현황을 정리해 과제의 핵심 변수를 도출합니다.',
   },
   {
     step: '02',
     title: '영향 분석',
     description:
-      '군 작전성, 비용 요소, 기술성숙도, 체계 간 연동성을 기준으로 분석 프레임을 설계합니다.',
+      '군 작전성, 비용요소, 기술성숙도, 체계 간 연동성을 기준으로 분석 프레임을 설계합니다.',
   },
   {
     step: '03',
     title: '전략 구상',
     description:
-      '분석 결과를 바탕으로 사업 추진 전략, 기술 로드맵, 체계 구성을 제안합니다.',
+      '분석 결과를 바탕으로 사업 추진전략, 기술로드맵, 체계구성을 제안합니다.',
   },
   {
     step: '04',
@@ -113,50 +113,19 @@ export const processSteps = [
   },
 ]
 
-export const certifications = [
-  {
-    title: '중소기업 확인서',
-    description: '중소기업으로서의 자격을 인정받아 국방·공공 프로젝트 수행 기반을 확보했습니다.',
-    image:
-      // TODO: 실제 중소기업 확인서 이미지로 교체하세요.
-      'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80',
-  },
-  {
-    title: '기업부설연구소 인정서',
-    description: '기업부설연구소 인정을 통해 체계적인 R&D 조직과 연구 역량을 공식적으로 인정받았습니다.',
-    image:
-      // TODO: 실제 기업부설연구소 인정서 이미지로 교체하세요.
-      'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80',
-  },
-  {
-    title: 'SW 사업자 확인서',
-    description: '국방·공공 분야 소프트웨어 사업 수행을 위한 공식 SW 사업자 자격을 보유하고 있습니다.',
-    image:
-      // TODO: 실제 SW 사업자 확인서 이미지로 교체하세요.
-      'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80',
-  },
-  {
-    title: '한국풍력산업협회 특별회원',
-    description: '한국풍력산업협회 특별회원으로서 해상·육상 풍력발전단지 관련 국방·사업성 검토를 함께 수행합니다.',
-    image:
-      // TODO: 실제 협회 회원증 또는 MOU 이미지로 교체하세요.
-      'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80',
-  },
-]
-
 export const projectRecords = [
   {
     period: '2019년 ~ 2025년',
     title: '국내 해상풍력단지 軍 작전성 검토 분석 및 평가',
     description:
-      '해상풍력발전설비 설치에 따른 軍 작전성 검토 협의 및 절차 분석, 인근 軍 작전요소 파악, 전파영향 조사 등을 통해 풍력발전사업 추진 가능 여부를 평가. (야월/두우리/칠산, 연평, 여수, 기장, 울산 귀신고래 등)',
+      '해상 풍력발전설비 설치에 따른 軍 작전성 검토협의 및 절차분석, 인근 軍 작전요소 파악, 전파영향 조사 등을 통해 풍력발전사업 추진 가능 여부를 평가. (야월/두우리/칠산, 연평, 여수, 기장, 울산 귀신고래 등)',
     category: '해상풍력 · 국방',
   },
   {
     period: '2018년 ~ 2023년',
     title: '국내 육상풍력단지 軍 작전성 검토 사전 타당성 조사',
     description:
-      '육상 풍력발전설비 설치에 따른 軍 작전성 검토 협의 절차와 인근 軍 작전요소, 전파영향 등을 사전에 조사하여 풍력발전사업 추진 타당성을 검토. (삼동산, 영월, 구룡, 김제, 고성 등)',
+      '육상 풍력발전설비 설치에 따른 軍 작전성 검토협의 및 절차분석, 인근 軍 작전요소 파악, 전파영향 조사 등을 사전에 조사하여 풍력발전사업 추진 타당성을 검토. (삼동산, 영월, 구룡, 김제, 고성 등)',
     category: '육상풍력 · 국방',
   },
   {
@@ -274,11 +243,11 @@ export const contactInfo = {
   description:
     '참고 사이트의 핵심 메시지를 유지하면서, 최신 서비스형 랜딩 페이지 구조로 재구성했습니다. 실제 연락처와 회사 정보는 아래 영역에 바로 교체하실 수 있습니다.',
   email: 'ksy520310@cegandplus.com',
-  // TODO: 실제 대표 전화로 교체하세요.
+  // 대표 전화번호
   phone: '010-5070-3386',
-
+  // 팩스번호
   fax : '02-522-1209',
-  // TODO: 실제 주소로 교체하세요.
+  // 회사주소
   address: '서울 용산구 한강대로 109 용성비즈텔 404호',
   mapQuery: '㈜ 씨이지앤드플러스 서울 용산구 한강대로 109 용성비즈텔 404호',
 }

@@ -270,7 +270,7 @@ function App() {
                       <div className="grid gap-4 bg-slate-950 px-5 py-6 sm:px-6">
                         <p className="text-sm leading-6 text-slate-300">
                           {isInAppBrowser
-                            ? '인앱 브라우저에서는 지도 링크가 차단될 수 있어, 아래에서 지도를 선택해 열어주세요.'
+                            ? '인앱 브라우저에서는 아래의 지도링크를 선택해주세요.'
                             : '인앱 브라우저 환경에서 지도가 차단되어 표시되지 않습니다. 아래에서 지도를 선택해 열어주세요.'}
                         </p>
                         <div className="mx-auto grid w-full max-w-sm gap-3">
@@ -278,7 +278,7 @@ function App() {
                             href={mapLinks.google}
                             target="_blank"
                             rel="noreferrer"
-                            className="inline-flex w-full items-center justify-center rounded-full bg-sky-400 px-5 py-2 text-sm font-semibold text-slate-950 transition hover:bg-sky-300"
+                            className="inline-flex w-full items-center justify-center rounded-full border border-black/10 bg-white/90 px-5 py-2 text-sm font-semibold text-slate-950 shadow-sm transition hover:bg-white"
                           >
                             구글지도
                           </a>
@@ -286,7 +286,7 @@ function App() {
                             href={mapLinks.kakao}
                             target="_blank"
                             rel="noreferrer"
-                            className="inline-flex w-full items-center justify-center rounded-full border border-white/10 bg-white/5 px-5 py-2 text-sm font-semibold text-white transition hover:bg-white/10"
+                            className="inline-flex w-full items-center justify-center rounded-full border border-black/10 bg-[#FEE500]/90 px-5 py-2 text-sm font-semibold text-[#191919] shadow-sm transition hover:bg-[#FEE500]"
                           >
                             카카오맵
                           </a>
@@ -294,7 +294,7 @@ function App() {
                             href={mapLinks.naver}
                             target="_blank"
                             rel="noreferrer"
-                            className="inline-flex w-full items-center justify-center rounded-full border border-white/10 bg-white/5 px-5 py-2 text-sm font-semibold text-white transition hover:bg-white/10"
+                            className="inline-flex w-full items-center justify-center rounded-full border border-black/10 bg-[#03C75A]/90 px-5 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-[#03C75A]"
                           >
                             네이버지도
                           </a>
