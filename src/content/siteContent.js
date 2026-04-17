@@ -25,7 +25,7 @@ export const services = [
     title: '풍력발전단지 군 작전 영향 분석',
     english: 'Military Operability Review On/Off Shore Wind Farm',
     description:
-      '풍력 발전단지가 군 작전에 미치는 영향의 정도를 군사기지법, 군사기지 및 시설 보호 기준에 근거하여 분석 및 평가합니다.',
+      '육상 및 해상 풍력 발전단지가 군 작전에 미치는 영향의 정도를 군사기지법 관계법령 및 행정규칙에 근거하여 분석 및 평가합니다.',
     image:
       // TODO: 실제 풍력발전단지 또는 사업 관련 이미지로 교체하세요.
       'https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=1200&q=80',
@@ -35,7 +35,7 @@ export const services = [
     title: '기술과 전략 구상',
     english: 'Develop System Technology & Strategy',
     description:
-      '군 운용개념 구현을 위한 체계운용, 요구능력, 성능 요소를 정리하고 체계 구성 및 기술 구조를 구상합니다.',
+      '군 운용개념 구현을 위한 요구능력, 체계운용, 성능 요소를 정리하고 체계 구성 및 기술 구조를 구상합니다.',
     image:
       // TODO: 실제 전략회의, 시스템 설계, 국방 R&D 이미지로 교체하세요.
       'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80',
@@ -70,7 +70,7 @@ export const capabilities = [
       '기존 체계 해석을 넘어 미래 작전환경에 필요한 개념, 기술, 구조를 연결해 실질적인 의사결정을 지원합니다.',
   },
   {
-    title: '풍력사업 인허가 리스크 검토',
+    title: '풍력발전사업 인허가 리스크 검토',
     description:
       '군 작전 영향성과 제도적 검토 포인트를 함께 확인해 사업 추진 단계의 불확실성을 줄입니다.',
   },
@@ -80,9 +80,9 @@ export const capabilities = [
       '비용, 성숙도, 상호운용성, 운용개념을 함께 고려하는 다층 분석으로 사업 타당성을 설계합니다.',
   },
   {
-    title: '보고서·제안서 활용 가능한 산출물',
+    title: '보고서·현장 대응 메뉴얼',
     description:
-      '실무 보고와 의사결정 문서에 바로 반영할 수 있도록 구조화된 결과물을 지향합니다.',
+      '실무 보고와 의사결정 지원을 위한 구조화된 결과물을 지향합니다.',
   },
 ]
 

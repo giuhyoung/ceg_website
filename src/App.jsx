@@ -201,7 +201,7 @@ function App() {
           <div className="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
             <SectionTitle
               eyebrow="Capabilities"
-              title="국방사업과 풍력사업을 잇는 실무형 분석 역량"
+              title="국방 R&D와 풍력발전사업을 잇는 실무형 분석 역량"
               description="사업 환경과 기술 구조를 함께 읽어내는 접근을 통해 의사결정에 필요한 인사이트를 정리합니다."
             />
 
