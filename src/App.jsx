@@ -183,15 +183,15 @@ function App() {
               compact
             />
 
-            <div className="mt-12 grid gap-6 lg:grid-cols-4">
+            <div className="mt-10 grid gap-5 lg:grid-cols-4">
               {processSteps.map((step) => (
                 <div
                   key={step.step}
                   className="rounded-[1.75rem] border border-white/10 bg-white/5 p-6 backdrop-blur"
                 >
                   <p className="text-sm font-semibold tracking-[0.3em] text-sky-300">{step.step}</p>
-                  <h3 className="mt-4 text-xl font-semibold text-white">{step.title}</h3>
-                  <p className="mt-4 text-base leading-7 text-slate-300">{step.description}</p>
+                  <h3 className="mt-3 text-xl font-semibold text-white">{step.title}</h3>
+                  <p className="mt-3 text-base leading-7 text-slate-300">{step.description}</p>
                 </div>
               ))}
             </div>
