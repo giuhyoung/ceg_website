@@ -241,10 +241,10 @@ function App() {
                   <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-300">
                     {project.period}
                   </p>
-                  <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
+                  <h3 className="mt-3 break-words text-lg font-semibold leading-6 text-white [overflow-wrap:anywhere]">
                     {project.title}
                   </h3>
-                  <p className="mt-3 flex-1 text-sm leading-7 text-slate-300">
+                  <p className="mt-3 flex-1 break-words text-sm leading-7 text-slate-300 [overflow-wrap:anywhere]">
                     {project.description}
                   </p>
                   <p className="mt-4 inline-flex w-fit rounded-full border border-sky-400/30 bg-sky-400/10 px-3 py-1 text-xs font-semibold text-sky-200">
