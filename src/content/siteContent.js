@@ -15,8 +15,8 @@ export const companyIntro = {
 }
 
 export const heroStats = [
-  { label: '주력 분야', value: '국방사업 · 풍력사업' },
-  { label: '핵심 서비스', value: '분석 · 전략 · 체계구상' },
+  { label: '주력 분야', value: '국방 R&D · 풍력발전사업' },
+  { label: '핵심 서비스', value: '전략 기획 및 체계 구상 · 군작전성 검토' },
   { label: '운영 형태', value: '기업 부설 연구소' },
 ]
 
