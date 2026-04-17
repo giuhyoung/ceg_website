@@ -131,7 +131,7 @@ function App() {
           </div>
         </section>
 
-        <section id="services" className="bg-slate-50 py-20 sm:py-24">
+        <section id="services" className="scroll-mt-24 bg-slate-50 py-20 sm:py-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <SectionTitle
               eyebrow="About CEG&+"
@@ -173,13 +173,14 @@ function App() {
           </div>
         </section>
 
-        <section id="process" className="bg-slate-950 py-20 sm:py-24">
+        <section id="process" className="scroll-mt-24 bg-slate-950 py-20 sm:py-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <SectionTitle
               eyebrow="Process"
               title="분석에서 실행 지원까지 이어지는 프로젝트 흐름"
               description="실제 제안, 검토, 보고 단계에서 활용할 수 있도록 단계별로 접근합니다."
               align="center"
+              compact
             />
 
             <div className="mt-12 grid gap-6 lg:grid-cols-4">
@@ -197,7 +198,7 @@ function App() {
           </div>
         </section>
 
-        <section id="capabilities" className="bg-white py-20 sm:py-24">
+        <section id="capabilities" className="scroll-mt-24 bg-white py-20 sm:py-24">
           <div className="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
             <SectionTitle
               eyebrow="Capabilities"
@@ -222,7 +223,7 @@ function App() {
           </div>
         </section>
 
-        <section id="projects" className="bg-slate-950 py-20 sm:py-24">
+        <section id="projects" className="scroll-mt-24 bg-slate-950 py-20 sm:py-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <SectionTitle
               eyebrow="Project Records"
@@ -254,7 +255,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section id="contact" className="bg-slate-100 py-20 sm:py-24">
+        <section id="contact" className="scroll-mt-24 bg-slate-100 py-20 sm:py-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="overflow-hidden rounded-[2rem] bg-slate-950 shadow-2xl">
               <div className="grid gap-10 px-6 py-10 sm:px-10 lg:grid-cols-[1fr_0.9fr] lg:px-12 lg:py-14">
