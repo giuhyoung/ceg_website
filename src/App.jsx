@@ -236,9 +236,9 @@ function App() {
               {projectRecords.map((project) => (
                 <article
                   key={`${project.period}-${project.title}`}
-                  className="flex flex-col rounded-[1.75rem] border border-white/10 bg-white/5 p-6 text-left backdrop-blur"
+                  className="flex min-w-0 flex-col rounded-[1.75rem] border border-white/10 bg-white/5 p-6 text-left backdrop-blur"
                 >
-                  <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-300">
+                  <p className="break-words text-xs font-semibold uppercase tracking-[0.3em] text-sky-300 [overflow-wrap:anywhere]">
                     {project.period}
                   </p>
                   <h3 className="mt-3 break-words text-lg font-semibold leading-6 text-white [overflow-wrap:anywhere]">
@@ -247,7 +247,7 @@ function App() {
                   <p className="mt-3 flex-1 break-words text-sm leading-7 text-slate-300 [overflow-wrap:anywhere]">
                     {project.description}
                   </p>
-                  <p className="mt-4 inline-flex w-fit rounded-full border border-sky-400/30 bg-sky-400/10 px-3 py-1 text-xs font-semibold text-sky-200">
+                  <p className="mt-4 inline-flex w-fit max-w-full break-words rounded-full border border-sky-400/30 bg-sky-400/10 px-3 py-1 text-xs font-semibold text-sky-200 [overflow-wrap:anywhere]">
                     {project.category}
                   </p>
                 </article>
