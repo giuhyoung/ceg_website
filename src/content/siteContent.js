@@ -35,8 +35,8 @@ export const services = [
     badge: 'Strategy',
   },
   {
-    title: '비용/기술성숙도 조사·분석',
-    english: 'Cost Analysis / Technology Readiness Assessment',
+    title: '비용 및 기술성숙도 조사·분석',
+    english: 'Cost Analysis & Technology Readiness Assessment',
     description:
       '프로젝트 비용의 가치를 평가하고 현재 기술성숙도를 분석해 강점과 약점을 추정하는 체계적인 접근을 제시합니다.',
     image:
