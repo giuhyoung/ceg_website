@@ -228,7 +228,7 @@ function App() {
             <SectionTitle
               eyebrow="Project Records"
               title="연구수행실적"
-              description="국방 C5ISR 체계, 레이더·센서, 해상·육상 풍력발전단지 사업에 이르기까지 다양한 프로젝트를 수행해 왔습니다."
+              description="국방 C5ISR 체계, 레이더·센서, 해상·육상풍력 발전단지 사업에 이르기까지 다양한 프로젝트를 수행해 왔습니다."
               align="center"
               theme="dark"
             />
