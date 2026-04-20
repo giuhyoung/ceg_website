@@ -177,7 +177,7 @@ function App() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <SectionTitle
               eyebrow="Process"
-              title="분석에서 실행 지원까지 이어지는 프로젝트 흐름"
+              title="분석에서 실행 지원까지 이어지는 연구 흐름"
               description="실제 제안, 검토, 보고 단계에서 활용할 수 있도록 단계별로 접근합니다."
               align="center"
               theme="dark"
