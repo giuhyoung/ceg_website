@@ -123,7 +123,7 @@ function App() {
                     Primary Focus
                   </p>
                   <p className="mt-3 text-2xl font-semibold text-white">
-                    국방사업 연구분석과 풍력발전사업 인·허가 지원전략을 함께 설계합니다.
+                    국방 R&D와 풍력발전사업 군 작전성검토 / 전파영향평가 인·허가 지원전략을 함께 설계합니다.
                   </p>
                 </div>
               </div>
