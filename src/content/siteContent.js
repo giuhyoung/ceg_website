@@ -15,12 +15,12 @@ export const heroStats = [
 
 export const services = [
   {
-    title: '풍력발전단지 군 작전 영향분석',
+    title: '풍력 발전단지 군 작전 영향분석',
     english: 'Military Operability Review On/Off Shore Wind Farm',
     description:
       '육·해상풍력 발전단지가 군 작전에 미치는 영향의 정도를 군사기지법 관계법령 및 행정규칙에 근거하여 분석 및 평가합니다.',
     image:
-      // TODO: 실제 풍력발전단지 또는 사업 관련 이미지로 교체하세요.
+      // TODO: 실제 풍력 발전단지 또는 사업 관련 이미지로 교체하세요.
       'https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=1200&q=80',
     badge: 'Wind Power',
   },
