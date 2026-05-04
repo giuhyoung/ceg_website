@@ -225,8 +225,8 @@ function App() {
               </div>
             </div>
 
-            <div className="mt-12 overflow-hidden rounded-[1.75rem] border border-slate-200 bg-white shadow-sm">
-              <div className="grid gap-6 p-6 lg:grid-cols-[1fr_1.55fr] lg:items-center">
+            <div className="mt-12 overflow-hidden rounded-[1.75rem] border border-slate-200 bg-slate-50 shadow-sm">
+              <div className="grid gap-6 p-6 lg:grid-cols-[1fr_1.35fr] lg:items-center">
                 <div>
                   <h2 className="text-lg font-semibold tracking-tight text-slate-950 sm:text-xl">
                     분석 Tool 보유현황
@@ -235,7 +235,7 @@ function App() {
                     AI빅데이터분석 / Sonar 엔진 데모 / Line-of-Sight Tool / MatLab 기반 응용프로그램
                   </p>
                 </div>
-                <div className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-950">
+                <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white">
                   <img
                     src="/capabilities-tools.png"
                     alt="분석 Tool 보유현황: AI빅데이터분석, Sonar 엔진 데모, Line-of-Sight Tool, MatLab 기반 응용프로그램"
