@@ -153,6 +153,7 @@ function App() {
                       src={service.image}
                       alt={service.title}
                       className="h-64 w-full object-cover transition duration-500 group-hover:scale-105"
+                      loading="lazy"
                     />
                     <span className="absolute left-5 top-5 rounded-full bg-slate-950/80 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-sky-200">
                       {service.badge}
@@ -195,30 +196,54 @@ function App() {
                 </div>
               ))}
             </div>
+
           </div>
         </section>
 
         <section id="capabilities" className="scroll-mt-24 bg-white py-20 sm:py-24">
-          <div className="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
-            <SectionTitle
-              eyebrow="Capabilities"
-              title="국방 R&D와 풍력발전사업을 잇는 실무형 분석 역량"
-              description="사업 환경과 기술 구조를 함께 읽어내는 접근을 통해 의사결정에 필요한 인사이트를 정리합니다."
-            />
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
+              <SectionTitle
+                eyebrow="Capabilities"
+                title="국방 R&D와 풍력발전사업을 잇는 실무형 분석 역량"
+                description="사업 환경과 기술 구조를 함께 읽어내는 접근을 통해 의사결정에 필요한 인사이트를 정리합니다."
+              />
 
-            <div className="grid gap-5 sm:grid-cols-2">
-              {capabilities.map((item) => (
-                <div
-                  key={item.title}
-                  className="rounded-[1.75rem] border border-slate-200 bg-slate-50 p-6 shadow-sm"
-                >
-                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-sky-100 text-lg font-bold text-sky-700">
-                    +
+              <div className="grid gap-5 sm:grid-cols-2">
+                {capabilities.map((item) => (
+                  <div
+                    key={item.title}
+                    className="rounded-[1.75rem] border border-slate-200 bg-slate-50 p-6 shadow-sm"
+                  >
+                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-sky-100 text-lg font-bold text-sky-700">
+                      +
+                    </div>
+                    <h3 className="mt-5 text-xl font-semibold text-slate-950">{item.title}</h3>
+                    <p className="mt-3 text-base leading-7 text-slate-600">{item.description}</p>
                   </div>
-                  <h3 className="mt-5 text-xl font-semibold text-slate-950">{item.title}</h3>
-                  <p className="mt-3 text-base leading-7 text-slate-600">{item.description}</p>
+                ))}
+              </div>
+            </div>
+
+            <div className="mt-12 overflow-hidden rounded-[1.75rem] border border-slate-200 bg-white shadow-sm">
+              <div className="grid gap-6 p-6 lg:grid-cols-[1fr_1.55fr] lg:items-center">
+                <div>
+                  <h2 className="text-lg font-semibold tracking-tight text-slate-950 sm:text-xl">
+                    분석 Tool 보유현황
+                  </h2>
+                  <p className="mt-3 text-sm leading-6 text-slate-600">
+                    AI빅데이터분석 / Sonar 엔진 데모 / Line-of-Sight Tool / MatLab 기반 응용프로그램
+                  </p>
                 </div>
-              ))}
+                <div className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-950">
+                  <img
+                    src="/capabilities-tools.png"
+                    alt="분석 Tool 보유현황: AI빅데이터분석, Sonar 엔진 데모, Line-of-Sight Tool, MatLab 기반 응용프로그램"
+                    className="w-full object-contain"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </section>
