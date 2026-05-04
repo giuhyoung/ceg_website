@@ -237,7 +237,7 @@ function App() {
                 </div>
                 <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white">
                   <img
-                    src="/capabilities-tools.png"
+                    src="/capabilities-tools-v2.png"
                     alt="분석 Tool 보유현황: AI빅데이터분석, Sonar 엔진 데모, Line-of-Sight Tool, MatLab 기반 응용프로그램"
                     className="w-full object-contain"
                     loading="lazy"
